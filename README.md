@@ -58,53 +58,53 @@ export const initialState = {
 
 > _Artık durumumuzu görebildiğimize göre, kullanıcının değiştirebilmesine izin verelim. Hazır bir action ile başlayalım...Bir tanesini total'e ekleyelim._
 
-- [ ] `ADD_ONE` actionını (./reducer/index.js içindeki) ve `addOne` action oluşturucuyu (./actions/index.js içindeki) alın. Bu action totale 1 ekleyecek.
-- [ ] `addOne` action oluşturucuyu App.js içine import edin.
-- [ ] `App.js` içinde 1 butonuna bir `onClick` event handler metodu ekleyin.
-- [ ] Event handler içinde, `addOne` action oluşturucuyu ekleyin.
-- [ ] 1 butonuna bastığınızda eventinizin doğru çalışıp çalışmadığını tarayıcınızda test edin. Total'iniz 1 artmalı.
-- [ ] Bir butona tıklandığında güncellenen totali nasıl gösterebileceğimizi düşünün. Neler uygulamalıyız? `sorunu-anlamak.md` dosyası içine, kendi cümlelerinizle tüm adımları yazın.
+- [*] `ADD_ONE` actionını (./reducer/index.js içindeki) ve `addOne` action oluşturucuyu (./actions/index.js içindeki) alın. Bu action totale 1 ekleyecek.
+- [*] `addOne` action oluşturucuyu App.js içine import edin.
+- [*] `App.js` içinde 1 butonuna bir `onClick` event handler metodu ekleyin.
+- [*] Event handler içinde, `addOne` action oluşturucuyu ekleyin.
+- [*] 1 butonuna bastığınızda eventinizin doğru çalışıp çalışmadığını tarayıcınızda test edin. Total'iniz 1 artmalı.
+- [*] Bir butona tıklandığında güncellenen totali nasıl gösterebileceğimizi düşünün. Neler uygulamalıyız? `sorunu-anlamak.md` dosyası içine, kendi cümlelerinizle tüm adımları yazın.
 
 #### Daha iyi bir hazır action bağlayın.
 
 > _Her sayı için ayrı action eklemek sıkıcı olabilir. TÜM sayısal girdiler için çalışabilecek bir action ekleyelim_
 
-- [ ] `APPLY_NUMBER` action'ı (./reducer/index.js içindeki) ve `applyNumber` action oluşturuyucu (./actions/index.js içindeki) alalım. Bu action, action oluşturucuya iletilen bir sayıyı ekler, çarpar veya çıkarır.
-- [ ] `applyNumber` action oluşturucusunu `App.js.` içine import edin
-- [ ] Daha önce 1 butonuna eklediğimiz event handlerı silin ya da comment içerisine alın.
-- [ ] Argüman olarak bir sayı alan ve `applyNumber` ı ekleyen bir event handler oluşturun.
-- [ ] Bu eventhandlerı 1 butonunun onClick'ine argümanına 1 vererek aktarın. (Şunu unutmayın click handlera bir fonksiyon aktarıyoruz, fonksiyonu çalıştırmıyoruz)
-- [ ] Hala 1 butonuna basıldığında totali 1 artırıp ekrana yazdırıp yazdırmadığını test edin.
-- [ ] Yeni event handlerınızı gerekli değerleri vererek tek tek diğer butonlara da bağlayın.
-- [ ] Tüm butonlara tek tek tıklandığında totale doğru değerleri ekleyip eklemediğini test edin.
+- [*] `APPLY_NUMBER` action'ı (./reducer/index.js içindeki) ve `applyNumber` action oluşturuyucu (./actions/index.js içindeki) alalım. Bu action, action oluşturucuya iletilen bir sayıyı ekler, çarpar veya çıkarır.
+- [*] `applyNumber` action oluşturucusunu `App.js.` içine import edin
+- [*] Daha önce 1 butonuna eklediğimiz event handlerı silin ya da comment içerisine alın.
+- [*] Argüman olarak bir sayı alan ve `applyNumber` ı ekleyen bir event handler oluşturun.
+- [*] Bu eventhandlerı 1 butonunun onClick'ine argümanına 1 vererek aktarın. (Şunu unutmayın click handlera bir fonksiyon aktarıyoruz, fonksiyonu çalıştırmıyoruz)
+- [*] Hala 1 butonuna basıldığında totali 1 artırıp ekrana yazdırıp yazdırmadığını test edin.
+- [*] Yeni event handlerınızı gerekli değerleri vererek tek tek diğer butonlara da bağlayın.
+- [*] Tüm butonlara tek tek tıklandığında totale doğru değerleri ekleyip eklemediğini test edin.
 
 #### Bir action oluşturucu oluşturun ve bağlayın.
 
 > _Şu anda uygulamamız sadece toplama işlemi yapıyor. Şimdi bunu değiştireceğiz. Kendi action oluşturucunuzu yaratmanın vakti geldi!_
 
-- [ ] `CHANGE_OPERATION` action'ı (`./reducer/index.js` içinde) alın. Bu reducer operatör değeri alır (+,- ve \*) ve bunu state'e aktarır.
-- [ ] Argümanı olarak bir operatör alan bir action oluşturucu oluşturun (`./actions/index.js` içinde) ve `CHANGE_OPERATION.` tipinde bir action nesnesi oluşturun
-- [ ] Yeni action oluşturucuyu `App.js` ye import edin
-- [ ] `+`, `-` ve `*` butonlarına tıklandığında, ilgili operatörü action oluşturucunuza ekleyen bir event handler oluşturun. Her buton için doğru operatörü gönderdiğinizden emin olun.
-- [ ] Operatör butonlarının doğru şekilde çalıştığından ve sayıları doğru işleme tabi tuttuğundan emin olmak için test yapın.
+- [*] `CHANGE_OPERATION` action'ı (`./reducer/index.js` içinde) alın. Bu reducer operatör değeri alır (+,- ve \*) ve bunu state'e aktarır.
+- [*] Argümanı olarak bir operatör alan bir action oluşturucu oluşturun (`./actions/index.js` içinde) ve `CHANGE_OPERATION.` tipinde bir action nesnesi oluşturun
+- [*] Yeni action oluşturucuyu `App.js` ye import edin
+- [*] `+`, `-` ve `*` butonlarına tıklandığında, ilgili operatörü action oluşturucunuza ekleyen bir event handler oluşturun. Her buton için doğru operatörü gönderdiğinizden emin olun.
+- [*] Operatör butonlarının doğru şekilde çalıştığından ve sayıları doğru işleme tabi tuttuğundan emin olmak için test yapın.
 
 #### Bir reducer ve action oluşturucu oluşturun ve bağlayın.
 
 > _Şimdi ekran görüntüleyiciyi sıfırlama özelliği ekleyeceğiz. Bunun için reducer ve action oluşturucunun tamamını kendiniz yapacaksınız._
 
-- [ ] `./reducers/index,` içinde, `CLEAR_DISPLAY` casei oluşturun. Bu case total değer statini 0 yapacak.
-- [ ] `./actions/index,` içinde, action oluşturucuyu ve `CLEAR_DISPLAY` action stringini alın. Reducer dosyanızda bu sabitleri import ettiğinizden emin olun.
-- [ ] `App.js,` içinde clearDisplay action oluşturucuyu import edin.
-- [ ] "CE" buttona clearDisplay action oluşturucunuzu ekleyen event handlerınızı oluşturun ve bağlayın.
-- [ ] clearDisplay butonunuzun düzgün çalışıp çalışmadığını test edin.
+- [*] `./reducers/index,` içinde, `CLEAR_DISPLAY` casei oluşturun. Bu case total değer statini 0 yapacak.
+- [*] `./actions/index,` içinde, action oluşturucuyu ve `CLEAR_DISPLAY` action stringini alın. Reducer dosyanızda bu sabitleri import ettiğinizden emin olun.
+- [*] `App.js,` içinde clearDisplay action oluşturucuyu import edin.
+- [*] "CE" buttona clearDisplay action oluşturucunuzu ekleyen event handlerınızı oluşturun ve bağlayın.
+- [*] clearDisplay butonunuzun düzgün çalışıp çalışmadığını test edin.
 
 #### Esnek olarak Memory fonksiyonları ekleyin.
 
 > _Tebrikler! Tüm işlemler için actionler ekleme görevini başarıyla tamamladınız! Şimdi aynı işlemleri takip ederek yeni özellikler ekleyeceksiniz. Tüm caseler için bir sonraki case e geçmeden önce testlerini yapmayı unutmayın._
 
-- [ ] `M+` a tıklandığında, şu anki memory değerine şu anki total değerini kaydedecek. UI'de test edin.
-- [ ] `MR` a tıklandığında, şu an memorydeki değer şu anki total değerine aktarılacak (APPLY_NUMBER case ine göz atın). UI'de test edin.
-- [ ] `MC` e tıklandığında, şu anki memory değeri sıfırlanacak. UI'de test edin.
+- [*] `M+` a tıklandığında, şu anki memory değerine şu anki total değerini kaydedecek. UI'de test edin.
+- [*] `MR` a tıklandığında, şu an memorydeki değer şu anki total değerine aktarılacak (APPLY_NUMBER case ine göz atın). UI'de test edin.
+- [*] `MC` e tıklandığında, şu anki memory değeri sıfırlanacak. UI'de test edin.
 
 ### Görev 3: Esnek görevler
 
